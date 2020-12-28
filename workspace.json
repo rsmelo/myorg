@@ -110,6 +110,31 @@
           }
         }
       }
+    },
+    "former-kit": {
+      "root": "libs/former-kit",
+      "sourceRoot": "libs/former-kit/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/former-kit/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/former-kit"
+          ],
+          "options": {
+            "jestConfig": "libs/former-kit/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

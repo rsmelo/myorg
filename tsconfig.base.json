@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@myorg/former-kit": ["libs/former-kit/src/index.js"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
