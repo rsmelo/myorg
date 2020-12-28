@@ -135,6 +135,31 @@
           }
         }
       }
+    },
+    "former-kit-skin-pagarme": {
+      "root": "libs/former-kit-skin-pagarme",
+      "sourceRoot": "libs/former-kit-skin-pagarme/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/former-kit-skin-pagarme/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/former-kit-skin-pagarme"
+          ],
+          "options": {
+            "jestConfig": "libs/former-kit-skin-pagarme/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

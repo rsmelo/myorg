@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@myorg/former-kit": ["libs/former-kit/src/index.js"]
+      "@myorg/former-kit": ["libs/former-kit/src/index.js"],
+      "@myorg/former-kit-skin-pagarme": [
+        "libs/former-kit-skin-pagarme/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
