@@ -9,7 +9,7 @@ import {
 /**
  * Apply the theme to UI.
  */
-export default class ThemeProvider extends React.Component {
+export class ThemeProvider extends React.Component {
   getChildContext () {
     const { theme } = this.props
     return { theme }

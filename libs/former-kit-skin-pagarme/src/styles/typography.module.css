@@ -1,6 +1,6 @@
-@import "./webfonts/lato/index.css";
-@import "./spacing.css";
-@import "./colors.css";
+@import "./webfonts/lato/index.module.css";
+@import "./spacing.module.css";
+@import "./colors.module.css";
 
 :root {
   --headline-font-size: 30px;

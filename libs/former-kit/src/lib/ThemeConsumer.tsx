@@ -7,7 +7,7 @@ import { object } from 'prop-types'
  * This wrapper is applied to all of components which apply the
  * `consumeTheme` function.
  */
-export default function ThemeConsumer (name) {
+export function ThemeConsumer (name) {
   return (Component) => {
     const themed = function Themed (props, { theme }) {
       const {

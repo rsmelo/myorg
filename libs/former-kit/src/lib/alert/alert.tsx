@@ -8,14 +8,15 @@ import {
   shape,
   string,
 } from 'prop-types'
-import ThemeConsumer from '../ThemeConsumer'
+import {ThemeConsumer} from '../ThemeConsumer'
+
 
 const consumeTheme = ThemeConsumer('UIAlert')
 
 /**
  * The Alert component is used to create alerts of all kinds, such as `errors`, `warnings`, etc.
  */
-const Alert = ({
+const Alerti = ({
   action,
   children,
   icon,
@@ -44,7 +45,7 @@ const Alert = ({
   </div>
 )
 
-Alert.propTypes = {
+Alerti.propTypes = {
   /**
    * The action text.
    */
@@ -85,11 +86,12 @@ Alert.propTypes = {
   ]).isRequired,
 }
 
-Alert.defaultProps = {
+Alerti.defaultProps = {
   action: null,
   icon: null,
   onDismiss: null,
   theme: {},
 }
 
-export default consumeTheme(Alert)
+export const Alert = consumeTheme(Alerti)
+export default Alert

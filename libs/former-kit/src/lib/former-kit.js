@@ -1,9 +1,10 @@
 import React from 'react';
-import './former-kit.module.css';
+import style from './former-kit.module.css';
+console.log('style', style)
 export function FormerKit(props) {
   return (
     <div>
-      <h1>Welcome to former-kit!</h1>
+      <h1 className={style.title}>Welcome to former-kit!{style.title}</h1>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import UIAlert from './alert/index'
+import UIAlert from './alert'
 
 export default {
   UIAlert,

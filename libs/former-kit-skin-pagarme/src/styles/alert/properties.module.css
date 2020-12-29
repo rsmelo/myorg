@@ -1,6 +1,6 @@
-@import "../colors.css";
-@import "../spacing.css";
-@import "../typography.css";
+@import "../colors.module.css";
+@import "../spacing.module.css";
+@import "../typography.module.css";
 
 :root {
   --alert-height: 48px;

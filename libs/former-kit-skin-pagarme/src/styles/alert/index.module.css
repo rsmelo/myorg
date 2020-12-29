@@ -1,4 +1,4 @@
-@import "./properties.css";
+@import "./properties.module.css";
 
 .alert * {
   box-sizing: border-box;
