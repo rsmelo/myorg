@@ -1,0 +1,67 @@
+@import "./properties.css";
+
+.alert * {
+  box-sizing: border-box;
+  margin: var(--alert-margin);
+}
+
+.alert {
+  align-items: center;
+  background-color: transparent;
+  border-radius: var(--alert-border-radius);
+  box-sizing: border-box;
+  display: flex;
+  font-family: var(--alert-font-family);
+  font-size: var(--alert-font-size);
+  height: var(--alert-height);
+  width: 100%;
+}
+
+.dark {
+  background-color: var(--alert-dark-background-color);
+  border: var(--alert-dark-border);
+  color: var(--alert-dark-color);
+}
+
+.light {
+  background-color: var(--alert-light-background-color);
+  border: var(--alert-light-border);
+  color: var(--alert-light-color);
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: var(--alert-content-margin-right);
+}
+
+.icon {
+  align-items: center;
+  border-radius: var(--alert-icon-border-radius);
+  color: var(--alert-icon-color);
+  display: flex;
+  font-size: var(--alert-icon-size);
+  height: var(--alert-icon-height);
+  justify-content: center;
+  margin-left: var(--alert-icon-margin-left);
+  margin-right: var(--alert-icon-margin-right);
+  width: var(--alert-icon-width);
+}
+
+.warning {
+  background-color: var(--alert-warning-color);
+}
+
+.info {
+  background-color: var(--alert-info-color);
+}
+
+.error {
+  background-color: var(--alert-error-color);
+}
+
+.success {
+  background-color: var(--alert-success-color);
+}

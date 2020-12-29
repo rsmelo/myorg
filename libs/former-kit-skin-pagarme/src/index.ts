@@ -1,1 +1,6 @@
-export * from './lib/former-kit-skin-pagarme';
+import styles from './styles'
+
+export default {
+  name: 'Pagar.me',
+  styles,
+}

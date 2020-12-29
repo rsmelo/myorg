@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import FormerKitSkinPagarme from './former-kit-skin-pagarme';
+import Alert from './alert';
 
-describe('FormerKitSkinPagarme', () => {
+describe('Alert', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<FormerKitSkinPagarme />);
+    const { baseElement } = render(<Alert />);
     expect(baseElement).toBeTruthy();
   });
 });
