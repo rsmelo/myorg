@@ -133,6 +133,36 @@
             "jestConfig": "libs/former-kit/jest.config.js",
             "passWithNoTests": true
           }
+        },
+        "storybook": {
+          "executor": "@nrwl/storybook:storybook",
+          "options": {
+            "uiFramework": "@storybook/react",
+            "port": 4400,
+            "config": {
+              "configFolder": "libs/former-kit/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        },
+        "build-storybook": {
+          "executor": "@nrwl/storybook:build",
+          "options": {
+            "uiFramework": "@storybook/react",
+            "outputPath": "dist/storybook/former-kit",
+            "config": {
+              "configFolder": "libs/former-kit/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
         }
       }
     },
@@ -157,6 +187,34 @@
           "options": {
             "jestConfig": "libs/former-kit-skin-pagarme/jest.config.js",
             "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "former-kit-e2e": {
+      "root": "apps/former-kit-e2e",
+      "sourceRoot": "apps/former-kit-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/former-kit-e2e/cypress.json",
+            "tsConfig": "apps/former-kit-e2e/tsconfig.e2e.json",
+            "devServerTarget": "former-kit:storybook"
+          },
+          "configurations": {
+            "ci": {
+              "devServerTarget": "former-kit:storybook:ci"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/former-kit-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
