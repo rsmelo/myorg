@@ -16,7 +16,7 @@ const consumeTheme = ThemeConsumer('UIAlert')
 /**
  * The Alert component is used to create alerts of all kinds, such as `errors`, `warnings`, etc.
  */
-const Alerti = ({
+const AlertComponent = ({
   action,
   children,
   icon,
@@ -45,7 +45,7 @@ const Alerti = ({
   </div>
 )
 
-Alerti.propTypes = {
+AlertComponent.propTypes = {
   /**
    * The action text.
    */
@@ -86,12 +86,12 @@ Alerti.propTypes = {
   ]).isRequired,
 }
 
-Alerti.defaultProps = {
+AlertComponent.defaultProps = {
   action: null,
   icon: null,
   onDismiss: null,
   theme: {},
 }
 
-export const Alert = consumeTheme(Alerti)
+export const Alert = consumeTheme(AlertComponent)
 export default Alert

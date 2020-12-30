@@ -4,14 +4,10 @@ import { withKnobs } from '@storybook/addon-knobs';
 import theme from '@myorg/former-kit-skin-pagarme'
 
 import {ThemeProvider} from '../src/lib/ThemeProvider'
-console.log('teste', theme)
-// import Typeset from '../src/Typeset'
 
 const ThemeDecorator = (storyFn) => (
   <ThemeProvider theme={theme}>
-    {/* <Typeset> */}
-      {storyFn()}
-    {/* </Typeset> */}
+    {storyFn()}
   </ThemeProvider>
 )
 

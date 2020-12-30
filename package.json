@@ -27,9 +27,11 @@
   },
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
     "core-js": "^3.6.5",
     "document-register-element": "1.13.1",
     "emblematic-icons": "^0.13.1",
+    "prop-types": "^15.7.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "tslib": "^2.0.0"
