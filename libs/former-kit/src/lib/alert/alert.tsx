@@ -10,7 +10,6 @@ import {
 } from 'prop-types'
 import {ThemeConsumer} from '../ThemeConsumer'
 
-
 const consumeTheme = ThemeConsumer('UIAlert')
 
 /**
