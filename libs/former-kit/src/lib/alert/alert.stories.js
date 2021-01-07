@@ -1,6 +1,6 @@
 import React from 'react';
 import { Alert }  from './alert';
-
+import { ReactComponent as AddIcon } from 'emblematic-icons/svg/Add24.svg'
 
 import Section from '../Section'
 
@@ -14,6 +14,7 @@ export const primary = () => {
     <Section title="warning">
       <Alert
         type="warning"
+        icon={<AddIcon />}
       >
         <p>Warning. Something is going on!</p>
       </Alert>
